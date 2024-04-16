@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/accessories/ranger-4df6c1b6.png');
+}
+.pgname {
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.contact {
+    color: #fff;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    color: #fff;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #2643eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+.contacts {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #b612ccc4;
+    color: #fff;
+}
+.social {
+    padding: 10px;
+}
+.social a{
+    padding: 10px;
+}
+.button a{
+    align-items: center;
+    justify-content: center;
+    color: #070202;
+    width: 150px;
+    height: 50px;
+    background-color: #b612ccc4;
+    border-radius: 15px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul li {
+    text-decoration: none;
+}
+.fa-brands {
+    color: #e2cfcf;
+    padding: 10px;
+}
+.fa-brands .fa-facebook:hover {
+    color: #4217dd;
+}
+.fa-brands .fa-instagram:hover {
+    color: #cf0336;
+}
+.fa-brands .fa-linkedin-in:hover {
+    color: #1225cf;
+}
+.fa-brands .fa-x-twitter:hover {
+    color: #070202;
+}

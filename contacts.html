@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--logo-->
+        <div class="idlogo">
+            <div class="name">
+                <h1>Andy Ben Obat</h1>
+            </div>   
+        </div>
+        
+            <!--Navigatioon Bar-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">About Me</a>
+            <a href="index.html">Skills</a>
+            <a href="index.html">Projects</a>
+            <a href="index.html">Resume</a>
+            <a href="contact.html">Contact</a>
+    </div>
+        </nav>
+
+    </header>
+
+    
+<!--Main Body-->
+<!--Contact-->
+        <section id="contact" class="contact">
+            <h2 class="pgname">Contact Me</h2>
+            <!-- Your contact form or contact information goes here -->
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error-message"></div>
+                    
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <div id="emailError" class="error-message"></div>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <div id="messageError" class="error-message"></div>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/andy_obat_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/andy-obat-176100255/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/BuliAndy"><i class="fa-brands fa-x-twitter"></i></a>  
+                </div>
+            </div>
+            
+            <script>
+                const form = document.getElementById('contactForm');
+                const nameInput = document.getElementById('name');
+                const emailInput = document.getElementById('email');
+                const messageInput = document.getElementById('message');
+                const nameError = document.getElementById('nameError');
+                const emailError = document.getElementById('emailError');
+                const messageError = document.getElementById('messageError');
+        
+                form.addEventListener('submit', function(event) {
+                    let isValid = true;
+        
+                    // Name validation
+                    if (nameInput.value.trim() === '') {
+                        nameError.textContent = 'Name is required';
+                        isValid = false;
+                    } else {
+                        nameError.textContent = '';
+                    }
+        
+                    // Email validation
+                    if (emailInput.value.trim() === '') {
+                        emailError.textContent = 'Email is required';
+                        isValid = false;
+                    } else if (!isValidEmail(emailInput.value.trim())) {
+                        emailError.textContent = 'Invalid email format';
+                        isValid = false;
+                    } else {
+                        emailError.textContent = '';
+                    }
+        
+                    // Message validation
+                    if (messageInput.value.trim() === '') {
+                        messageError.textContent = 'Message is required';
+                        isValid = false;
+                    } else {
+                        messageError.textContent = '';
+                    }
+        
+                    if (!isValid) {
+                        event.preventDefault(); // Prevent form submission if not valid
+                    }
+                });
+        
+                // Function to validate email format
+                function isValidEmail(email) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return emailRegex.test(email);
+                }
+            </script>
+        </section>
+    </div>
+
+</body>
+
+</html>

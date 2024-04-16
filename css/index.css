@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    background-image: url('/accessories/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg');
+    background-color: #e2cfcf;
+    background-size: contain;
+    text-decoration-color: #ffffff;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    color: #f1f1f1;
+}
+
+/*logo area*/
+.idlogo {
+    padding: 0 0 0 25px;
+    display: inline;  
+    justify-content: space-between; 
+}
+/*Profession*/
+.profession {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #262626;
+    font-size: 9px;
+    padding-left: 10px;
+}
+.profession p {
+    font-size: 9px;
+}
+
+nav {
+    backdrop-filter: blur(20px); /* Adjust the blur radius */
+    z-index: 1; /* Ensure the pseudo-element stays behind the content */
+    /* background-color: #160846; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+nav a {
+    color: #2b0f1f;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(250, 245, 245, 0.849); */
+    transition:  0.6s ease; /* Transition for blur effect */
+}
+
+nav a:hover {
+    background: blur(2px);
+    border-bottom: 3px solid #fff ;
+    transition: 0.6s ease;
+    /* Adjust the blur radius as needed */
+}
+
+.container {
+    /* max-width: 800px; */
+    /* margin: 15px auto; */
+    padding: none;
+}
+.section {
+    height: 650px;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 900px;
+    align-items: center;
+    padding-top: 60px;
+}
+.home h2 {
+    color: #e2cfcf;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.home p {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+/* About Us */
+.about {
+    background-color: rgba(194, 165, 226, 0.3); /* Adjust the background color and opacity */
+    backdrop-filter: blur(30px); /* Adjust the blur radius */
+    z-index: -1; /* Ensure the pseudo-element stays behind the content */
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px solid #230235;
+    padding-top: 70px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.about h3 {
+    text-align: center;
+    font-size: 25;
+}
+.welcome {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Skills */
+.skills {
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 70px;
+    border-top: 2px #333;
+}
+
+.dev {
+    display: flex;
+}
+.back-end {
+    padding: 5px;
+    border-right: 2px #916792;
+    border-radius: 10px solid #916792;
+}
+.front-end {
+    padding: 5px;
+    border-left: 2px;
+    border-radius: 10px solid #916792;
+}
+.languages {
+    padding: 10px;
+    align-items: center;
+}
+.lang {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 5px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(250, 245, 245, 0.849);
+}
+
+/*Projects*/
+.projects {
+    padding-top: 70px;
+    height: 650px;
+    background-color: white;
+    text-align: center;
+}
+/* Resume */
+.Resume {
+    background-color: #e2cfcf;
+    align-items: center;
+    justify-content: center;
+}
+.cv {
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #1225cf;
+    color: #e2cfcf;
+    align-items: center;
+    justify-content: center;
+}
+/* Contact Us page */
+.contacts {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #b612ccc4;
+    color: #fff;
+}
+.social {
+    padding: 10px;
+}
+.social a{
+    padding: 10px;
+}
+.button a{
+    align-items: center;
+    justify-content: center;
+    color: #070202;
+    width: 150px;
+    height: 50px;
+    background-color: #b612ccc4;
+    border-radius: 15px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul li {
+    text-decoration: none;
+}
+.fa-brands {
+    color: #e2cfcf;
+}
+.fa-brands .fa-facebook a:hover {
+    color: #4217dd;
+}
+.fa-brands .fa-instagram a:hover {
+    color: #cf0336;
+}
+.fa-brands .fa-linkedin-in a:hover {
+    color: #1225cf;
+}
+.fa-brands .fa-x-twitter a:hover {
+    color: #070202;
+}
